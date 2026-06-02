@@ -4,7 +4,7 @@ A comprehensive repository for learning, practicing, and mastering C++ programmi
 
 ##  Objectives
 
-* Learn C++ syntax and programming fundamentals
+* C++ syntax and programming fundamentals
 * Understand Object-Oriented Programming (OOP)
 * Master Data Structures and Algorithms (DSA)
 * Practice problem-solving skills
@@ -259,24 +259,4 @@ program.exe
 
 ---
 
-##  Progress Tracker
-
-| Topic     | Status |
-| --------- | ------ |
-| Basics    | ⬜      |
-| Functions | ⬜      |
-| Arrays    | ⬜      |
-| Pointers  | ⬜      |
-| OOP       | ⬜      |
-| STL       | ⬜      |
-| DSA       | ⬜      |
-| Projects  | ⬜      |
-
-Legend:
-
-* ⬜ Not Started
-* 🟨 In Progress
-* ✅ Completed
-
----
 
