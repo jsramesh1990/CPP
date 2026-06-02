@@ -1,263 +1,282 @@
-# C Keyword Mastery 
+# C++ Programming 
 
-> Master all 44 C keywords across C89/C90, C99, and C11 standards with practical, runnable examples.
+A comprehensive repository for learning, practicing, and mastering C++ programming from fundamentals to advanced concepts.
 
-![Language](https://img.shields.io/badge/language-C-blue.svg)
-![Standards](https://img.shields.io/badge/standard-C89%20%7C%20C99%20%7C%20C11-orange)
-![Build](https://img.shields.io/badge/build-Make-success)
-![Compiler](https://img.shields.io/badge/compiler-GCC%20%7C%20Clang-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Active-brightgreen)
+##  Objectives
 
----
-
-##  Overview
-
-This project provides a **structured, hands-on reference** for every C keyword. Each keyword includes:
-- ✅ **Tiny runnable example**
-- ✅ **Expected output**
-- ✅ **Common pitfalls**
-- ✅ **Standard-specific notes**
+* Learn C++ syntax and programming fundamentals
+* Understand Object-Oriented Programming (OOP)
+* Master Data Structures and Algorithms (DSA)
+* Practice problem-solving skills
+* Build mini-projects
+* Prepare for coding interviews and competitive programming
 
 ---
 
-##  Tiny Example – See It in Action
+## Roadmap
 
-Every keyword has a minimal demo. Here's `static`:
+### Phase 1: C++ Fundamentals
 
-```c
-// examples/static.c
-#include <stdio.h>
+* [ ] Introduction to C++
+* [ ] Setting Up Development Environment
+* [ ] Input and Output
+* [ ] Variables and Data Types
+* [ ] Operators
+* [ ] Type Casting
+* [ ] Constants and Literals
 
-void counter() {
-    static int count = 0;  // initialized once
-    count++;
-    printf("Called %d time(s)\n", count);
-}
+### Phase 2: Control Statements
 
-int main() {
-    counter();  // Called 1 time(s)
-    counter();  // Called 2 time(s)
-    return 0;
-}
-```
+* [ ] if, else if, else
+* [ ] switch statement
+* [ ] for loop
+* [ ] while loop
+* [ ] do-while loop
+* [ ] break and continue
+* [ ] Nested loops
 
-**Output:**
-```
-Called 1 time(s)
-Called 2 time(s)
-```
+### Phase 3: Functions
 
-**What you learn:** `static` preserves value between function calls.
+* [ ] Function Declaration
+* [ ] Function Definition
+* [ ] Function Parameters
+* [ ] Return Values
+* [ ] Function Overloading
+* [ ] Inline Functions
+* [ ] Recursive Functions
+
+### Phase 4: Arrays and Strings
+
+* [ ] One-Dimensional Arrays
+* [ ] Multi-Dimensional Arrays
+* [ ] Character Arrays
+* [ ] String Handling
+* [ ] STL String
+
+### Phase 5: Pointers
+
+* [ ] Pointer Basics
+* [ ] Pointer Arithmetic
+* [ ] Pointers and Arrays
+* [ ] Pointers to Functions
+* [ ] Dynamic Memory Allocation
+
+### Phase 6: Object-Oriented Programming
+
+* [ ] Classes and Objects
+* [ ] Constructors
+* [ ] Destructors
+* [ ] Encapsulation
+* [ ] Inheritance
+* [ ] Polymorphism
+* [ ] Abstraction
+* [ ] Friend Functions
+* [ ] Operator Overloading
+
+### Phase 7: Standard Template Library (STL)
+
+* [ ] Vector
+* [ ] List
+* [ ] Queue
+* [ ] Stack
+* [ ] Deque
+* [ ] Set
+* [ ] Map
+* [ ] Unordered Set
+* [ ] Unordered Map
+* [ ] Algorithms
+
+### Phase 8: File Handling
+
+* [ ] Reading Files
+* [ ] Writing Files
+* [ ] File Streams
+* [ ] Binary Files
+
+### Phase 9: Data Structures
+
+* [ ] Arrays
+* [ ] Linked Lists
+* [ ] Stacks
+* [ ] Queues
+* [ ] Trees
+* [ ] Binary Search Trees
+* [ ] Heaps
+* [ ] Graphs
+* [ ] Hash Tables
+
+### Phase 10: Algorithms
+
+* [ ] Searching Algorithms
+* [ ] Sorting Algorithms
+* [ ] Recursion
+* [ ] Backtracking
+* [ ] Dynamic Programming
+* [ ] Greedy Algorithms
+* [ ] Graph Algorithms
+
+### Phase 11: Modern C++
+
+* [ ] Auto Keyword
+* [ ] Range-Based Loops
+* [ ] Lambda Functions
+* [ ] Smart Pointers
+* [ ] Move Semantics
+* [ ] Multithreading
+* [ ] C++11 Features
+* [ ] C++14 Features
+* [ ] C++17 Features
+* [ ] C++20 Features
 
 ---
 
-## 🔄 Workflow – How You'll Learn
+##  Repository Structure
 
 ```text
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│ Select      │ ──▶ │ Read tiny   │ ──▶ │ Compile &   │ ──▶ │ Observe     │
-│ keyword     │     │ example     │     │ run         │     │ output      │
-└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
-                                                                     │
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐               │
-│ Apply in    │ ◀── │ Review      │ ◀── │ Understand  │ ◀─────────────┘
-│ your code   │     │ pitfalls    │     │ behavior    │
-└─────────────┘     └─────────────┘     └─────────────┘
-```
-
----
-
-##  Project Flow – Code Architecture
-
-```mermaid
-flowchart LR
-    subgraph User
-        A[Choose keyword]
-    end
-
-    subgraph Repo
-        B[examples/ keyword.c]
-        C[Makefile]
-        D[Binaries/]
-        E[docs/ keyword.md]
-    end
-
-    subgraph Terminal
-        F[Compile & run]
-        G[See output]
-        H[Read docs]
-    end
-
-    A --> B
-    B --> C
-    C --> F
-    F --> D
-    D --> G
-    G --> H
-    H --> A
-```
-
----
-
-##  Project Structure
-
-```bash
-c-keyword-mastery/
+cpp-learning/
 │
-├── examples/               # Tiny, runnable keyword demos
-│   ├── static.c            # static keyword example
-│   ├── volatile.c
-│   ├── restrict.c          # C99
-│   └── _Generic.c          # C11
-│
-├── docs/                   # Detailed keyword explanations
-│   ├── static.md
-│   └── ...
-│
-├── tests/                  # Unit tests for keyword behavior
-│   └── test_static.c
-│
-├── Makefile                # Build automation
 ├── README.md
-└── LICENSE
+│
+├── 01_Basics/
+├── 02_Control_Statements/
+├── 03_Functions/
+├── 04_Arrays/
+├── 05_Strings/
+├── 06_Pointers/
+├── 07_OOP/
+├── 08_STL/
+├── 09_File_Handling/
+├── 10_Data_Structures/
+├── 11_Algorithms/
+├── 12_Modern_CPP/
+│
+├── Practice_Problems/
+│
+├── Mini_Projects/
+│   ├── Calculator/
+│   ├── Student_Management/
+│   ├── Library_System/
+│   └── Banking_System/
+│
+└── Notes/
 ```
 
 ---
 
-##  Build & Run
+##  Prerequisites
 
-### Prerequisites
-- GCC or Clang
-- Make
+* Basic computer knowledge
+* C++ compiler (GCC, Clang, MSVC)
+* Code Editor:
 
-### Commands
+  * VS Code
+  * Code::Blocks
+  * Visual Studio
+  * CLion
+
+---
+
+##  Compilation
+
+### Linux / macOS
 
 ```bash
-# Build all examples
-make
+g++ program.cpp -o program
 
-# Run a specific keyword example
-make run keyword=static
-
-# Run all tests
-make test
-
-# Clean binaries
-make clean
+./program
 ```
 
-### Manual run (if you prefer)
+### Windows
 
 ```bash
-gcc examples/static.c -o static_demo
-./static_demo
+g++ program.cpp -o program.exe
+
+program.exe
 ```
 
 ---
 
-##  Keywords by Standard
+##  Practice Routine
 
-| Standard | Keywords | Example |
-|----------|----------|---------|
-| **C89/C90** (32) | `auto`, `break`, `case`, `char`, `const`, `continue`, `default`, `do`, `double`, `else`, `enum`, `extern`, `float`, `for`, `goto`, `if`, `int`, `long`, `register`, `return`, `short`, `signed`, `sizeof`, `static`, `struct`, `switch`, `typedef`, `union`, `unsigned`, `void`, `volatile`, `while` | `static int x;` |
-| **C99** (5) | `_Bool`, `_Complex`, `_Imaginary`, `inline`, `restrict` | `restrict char* ptr` |
-| **C11** (7) | `_Alignas`, `_Alignof`, `_Atomic`, `_Generic`, `_Noreturn`, `_Static_assert`, `_Thread_local` | `_Static_assert(1, "ok");` |
+### Daily
 
-**Total: 44 keywords**
+* Learn one concept
+* Solve 5–10 problems
+* Revise previous topics
 
----
+### Weekly
 
-##  Testing Example
+* Complete one mini project
+* Review notes
+* Solve coding challenges
 
-Each keyword has a test verifying its behavior:
+### Monthly
 
-```c
-// tests/test_static.c
-#include <assert.h>
-
-void counter() {
-    static int calls = 0;
-    calls++;
-}
-
-int main() {
-    counter();
-    counter();
-    // Verify static internal state (via debug or harness)
-    return 0;
-}
-```
-
-Run with:
-```bash
-make test
-```
+* Build a larger project
+* Attempt mock interviews
+* Contribute to open source
 
 ---
 
-##  Documentation Sample
+##  Recommended Practice Platforms
 
-Each keyword has a markdown file in `docs/`:
-
-```markdown
-# static
-
-## Tiny example
-(see examples/static.c)
-
-## Output
-Called 1 time(s)
-Called 2 time(s)
-
-## Pitfall
-Static variables inside functions are not thread-safe.
-
-## Best practice
-Use for counters or caches that must persist across calls.
-```
+* LeetCode
+* HackerRank
+* Codeforces
+* AtCoder
+* GeeksforGeeks
+* Coding Ninjas
 
 ---
 
-##  Contributing
+##  Recommended Books
 
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/new-keyword`
-3. Add tiny example in `examples/`
-4. Add docs in `docs/`
-5. Commit: `git commit -m "Add _Alignas example"`
-6. Push: `git push origin feature/new-keyword`
-7. Open a Pull Request
+### Beginner
 
----
+1. Programming: Principles and Practice Using C++
+2. C++ Primer
 
-##  Roadmap
+### Intermediate
 
-- [ ] Add all 44 examples
-- [ ] Add C17/C23 notes
-- [ ] Interactive CLI menu to browse keywords
-- [ ] Memory visualization diagrams
+1. Effective C++
+2. More Effective C++
+
+### Advanced
+
+1. Effective Modern C++
+2. The C++ Programming Language
 
 ---
 
-##  License
+##  Goals
 
-MIT License – free for learning and teaching.
+* Master C++ fundamentals
+* Understand OOP deeply
+* Learn STL thoroughly
+* Become proficient in DSA
+* Build real-world projects
+* Prepare for software engineering interviews
 
 ---
 
-##  Support
+##  Progress Tracker
 
-If this helps you master C, give it a star ⭐
+| Topic     | Status |
+| --------- | ------ |
+| Basics    | ⬜      |
+| Functions | ⬜      |
+| Arrays    | ⬜      |
+| Pointers  | ⬜      |
+| OOP       | ⬜      |
+| STL       | ⬜      |
+| DSA       | ⬜      |
+| Projects  | ⬜      |
 
+Legend:
 
-```
+* ⬜ Not Started
+* 🟨 In Progress
+* ✅ Completed
 
-**Master C, one keyword at a time.**
-```
+---
 
-This version gives you:
-- **Tiny examples** embedded right in the README (like the `static` snippet).
-- **Workflow diagram** (ASCII + Mermaid) showing the learning loop.
-- **Project flow** showing how code, build, and docs connect.
-- **Clear structure** so recruiters and learners see value instantly.
